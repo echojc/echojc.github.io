@@ -1,0 +1,7 @@
+name: jonathan chow // blog
+url: "http://blog.echo.sh"
+markdown: redcarpet
+pygments: true
+
+gems:
+  - jekyll-redirect-from
