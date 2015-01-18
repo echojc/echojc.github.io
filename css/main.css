@@ -130,7 +130,7 @@ a:visited { color: #a0a; }
   line-height: 1.5;
   border: 1px solid #eee;
   background-color: #fefcfc;
-  padding: 0 .2em;
+  padding: 1px 0.2em;
 }
 
 .post pre {
@@ -142,6 +142,7 @@ a:visited { color: #a0a; }
 
 .post pre code {
   border: 0px;
+  padding: 0px;
 }
 
 /* terminal */
