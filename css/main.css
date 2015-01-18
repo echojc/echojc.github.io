@@ -112,10 +112,12 @@ a:visited { color: #a0a; }
   font-size: 14px;
 }
 
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+.post a {
+  color: #00d;
+}
+
+.post a:visited {
+  color: #00d;
 }
 
 .post ul, .post ol {
@@ -123,13 +125,23 @@ a:visited { color: #a0a; }
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 1px solid #eee;
+  background-color: #fefcfc;
   padding: 0 .2em;
 }
 
+.post pre {
+  border: 1px solid #eee;
+  background-color: #fefcfc;
+  padding: 1em;
+  overflow-x: auto;
+}
+
 .post pre code {
-  border: none;
+  border: 0px;
 }
 
 /* terminal */
@@ -242,6 +254,14 @@ h2 {
   font-family: 'Lato', sans-serif;
   text-align: left;
   font-size: 36px;
+  text-decoration: none;
+  color: #193441;
+  margin-top: 4px;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
   text-decoration: none;
   color: #193441;
   margin-top: 4px;
