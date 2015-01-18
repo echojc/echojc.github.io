@@ -32,7 +32,7 @@ generated at compile time.
 
 Let's reduce the problem to a very specific one: taking any
 arbitrary case class and producing converter functions to and from a
-Map[String, Any] where the keys are the names of the case class's constructor
+`Map[String, Any]` where the keys are the names of the case class's constructor
 parameters pointing to their respective values.
 
 [Note: many of the problems I faced while writing this macro were solved by
