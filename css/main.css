@@ -269,6 +269,10 @@ h3 {
   margin-top: 1.6em;
 }
 
+.post h3 code {
+  font-size: 24px;
+}
+
 .heading .headline {
   font-family: 'Lato', sans-serif;
   text-align: left;
