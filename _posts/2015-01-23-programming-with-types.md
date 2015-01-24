@@ -182,14 +182,14 @@ of the Haskell programming language, type signatures are in fact very unique.
 I could look a signature like this
 
 {% highlight haskell %}
-_ :: (a -> b) -> [a] -> [b]
+(a -> b) -> [a] -> [b]
 {% endhighlight %}
 
 and understand immediately that the only productive implementation for this
 signature yields the `map` function. Or a signature like this:
 
 {% highlight haskell %}
-_ :: (a -> b -> b) -> b -> [a] -> b
+(a -> b -> b) -> b -> [a] -> b
 {% endhighlight %}
 
 and immediately see a `fold` function (`foldr` specifically in Haskell).
