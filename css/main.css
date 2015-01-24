@@ -238,10 +238,13 @@ a:visited { color: #a0a; }
 
 .site {
   width: 95%;
-  text-align: justify;
   margin: 0em 2.5%;
   padding-bottom: 3em;
   font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+  text-align: left;
 }
 
 .heading {
