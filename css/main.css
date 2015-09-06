@@ -146,6 +146,17 @@ a:visited { color: #a0a; }
   padding: 0px;
 }
 
+.post blockquote {
+  font-style: italic;
+  border-left: 0.5em solid #eee;
+  padding: 1em;
+}
+
+.post blockquote p {
+  padding: 0em;
+  margin: 0em;
+}
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
