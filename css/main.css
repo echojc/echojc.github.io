@@ -75,31 +75,30 @@ a:visited { color: #a0a; }
 }
 
 .footer {
-  font-size: 80%;
+  font-size: 100%;
   color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
+  text-align: center;
 }
 
-.footer .contact {
-  float: left;
-  margin-right: 3em;
+.footer .icon {
+  color: #2c3e50;
 }
 
-.footer .contact a {
-  color: #8085C1;
+.footer a {
+  text-decoration: none;
+  color: #2c3e50;
+
+  -webkit-transition: opacity .1s linear;
+  -moz-transition: opacity .1s linear;
+  -ms-transition: opacity .1s linear;
+  -o-transition: opacity .1s linear;
+  transition: opacity .1s linear;
 }
 
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+.footer a:hover {
+  opacity: 0.5;
 }
 
-.footer .rss img {
-  border: 0;
-}
 
 /*****************************************************************************/
 /*
