@@ -232,8 +232,8 @@ a:visited { color: #a0a; }
 
 .header {
   height: 90px;
-  width: 95%;
-  margin: 0em 2.5%;
+  width: 90%;
+  margin: 0em 5%;
   font-family: 'Lato', sans-serif;
 }
 
@@ -248,8 +248,8 @@ a:visited { color: #a0a; }
 }
 
 .site {
-  width: 95%;
-  margin: 0em 2.5%;
+  width: 90%;
+  margin: 0em 5%;
   padding-bottom: 3em;
   font-family: 'Open Sans', sans-serif;
 }
@@ -326,12 +326,12 @@ h3 {
 
 @media (min-width: 750px) {
   .header {
-    width: 720px;
+    width: 700px;
     margin: 0em auto;
   }
 
   .site {
-    width: 720px;
+    width: 700px;
     margin: 0em auto;
   }
 }
