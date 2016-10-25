@@ -1,5 +1,7 @@
 name: jonathan chow // blog
 url: "http://blog.echo.sh"
+author: Jonathan Chow
 
 gems:
   - jekyll-redirect-from
+  - jekyll-feed
