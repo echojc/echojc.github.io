@@ -74,4 +74,4 @@ test case without any code duplication and concisely lists all your test cases
 and expected outputs together.
 
 You can see how I did Corey’s Roman Numerals kata in Scala (along with other
-katas I have done/will do) [on my GitHub](https://github.co/echojc/scala-kata).
+katas I have done/will do) [on my GitHub](https://github.com/echojc/scala-kata).
