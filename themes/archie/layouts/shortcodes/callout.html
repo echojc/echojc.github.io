@@ -2,7 +2,7 @@
 <div class='callout callout-{{ $type }}' style='{{ if eq $type "custom" }}{{ .Get "style" | safeCSS }}{{ end }}'>
   <div class="callout-inner">
     {{ if eq $type "alert" }}
-    🚨 <u>alert</u>
+    🚨 <u>Alert</u>
     <br />
     {{ .Get "text" }}
     {{ else if eq $type "custom" }}
@@ -10,11 +10,11 @@
     <br />
     {{ .Get "text" }}
     {{ else if eq $type "tip" }}
-    🔎 <u>tip</u>
+    🔎 <u>Tip</u>
     <br />
     {{ .Get "text" }}
     {{ else if eq $type "warning" }}
-    ⚠️  <u>warning</u>
+    ⚠️  <u>Warning</u>
     <br />
     {{ .Get "text" }}
     {{ else}}

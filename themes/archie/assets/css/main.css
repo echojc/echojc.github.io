@@ -49,7 +49,7 @@
   --content-max-width: 800px;
   --content-padding: 1ch;
   --border-radius: 5px;
-  --font-size-base: 15px;
+  --font-size-base: 16px;
   --line-height-base: 1.6;
   --line-height-content: 1.5;
 }
@@ -64,7 +64,7 @@ html {
   color: var(--color-text, #232333);
   /*font-family: 'Roboto Mono', 'Courier New', monospace;*/
   font-family: 'Roboto Mono', monospace;
-  font-size: var(--font-size-base, 15px);
+  font-size: var(--font-size-base, 16px);
   line-height: var(--line-height-base, 1.6);
   scroll-behavior: smooth;
 }
@@ -159,6 +159,17 @@ a {
   color: inherit;
   text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.readmore {
+  color: var(--color-yellow);
+  border-bottom: 3px solid var(--color-yellow);
+  border-block-end: 3px solid var(--color-yellow);
+}
+
+.readmore:hover,
+.readmore:focus {
+  background-color: var(--color-yellow);
 }
 
 a:hover,
