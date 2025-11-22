@@ -62,7 +62,8 @@
 
 html {
   color: var(--color-text, #232333);
-  font-family: 'Roboto Mono', 'Courier New', monospace;
+  /*font-family: 'Roboto Mono', 'Courier New', monospace;*/
+  font-family: 'Roboto Mono', monospace;
   font-size: var(--font-size-base, 15px);
   line-height: var(--line-height-base, 1.6);
   scroll-behavior: smooth;
@@ -98,18 +99,18 @@ body {
 /* Typography */
 p {
   /*font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;*/
-  font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /*font-family: 'Noto Sans', sans-serif;*/
   line-height: var(--line-height-content, 1.5);
   /* Fallback for older browsers */
-  margin-top: 1.4em;
-  margin-bottom: 1.4em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
 }
 
-@supports (margin-block: 1.4em) {
+@supports (margin-block: 1.2em) {
   p {
     margin-top: unset;
     margin-bottom: unset;
-    margin-block: 1.4em;
+    margin-block: 1.2em;
   }
 }
 
@@ -191,6 +192,14 @@ ul {
 
 ul li {
   text-indent: -2ch;
+  margin-block: 0.4em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  /*
+  margin-left: -2ch;
+  display: flex;
+  gap: 0.4em;
+  */
 }
 
 ul > li::before {
@@ -278,7 +287,7 @@ pre {
 pre code {
   background-color: transparent;
   color: inherit;
-  font-size: 100%;
+  font-size: 0.9rem;
   padding: 0;
 }
 
@@ -307,22 +316,22 @@ header {
   justify-content: space-between;
   align-items: center;
   /* Fallback for older browsers */
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
   /* Modern logical properties */
-  margin-block: 1em;
+  margin-block: 2em 1em;
   line-height: 2.5em;
   gap: 1rem;
 }
 
 header .main {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   /* Fallback for older browsers */
   margin-top: 2em;
   margin-bottom: 0.5em;
@@ -341,7 +350,7 @@ h6::before { color: var(--color-secondary, #dc143c); content: '###### '; }
 
 .meta {
   color: var(--color-text-meta, #999999);
-  letter-spacing: -0.5px;
+  /*letter-spacing: -0.5px;*/
   font-size: 0.9em;
 }
 
@@ -499,7 +508,7 @@ article .title {
 }
 
 .callout p {
-  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  /*font-family: 'IBM Plex Mono', 'Courier New', monospace;*/
   margin: 0;
 }
 
@@ -822,4 +831,11 @@ nav {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* custom css */
+
+.job {
+  color: var(--color-base1);
+  font-size: 0.9em;
 }
