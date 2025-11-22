@@ -1,0 +1,8 @@
+<p align="center">
+{{ $image := resources.Get (.Get "src") }}
+<img src="{{ $image.Permalink }}"/>
+{{ if (.Get "caption") }}
+<br/>
+<small><em>{{ .Get "caption" }}</em></small>
+{{ end }}
+</p>
