@@ -1,6 +1,7 @@
 ---
 title: birthday problem
 date: 2013-03-22
+tags: [scala]
 ---
 
 Recently at work we came across a case where we needed to generate up to 10,000

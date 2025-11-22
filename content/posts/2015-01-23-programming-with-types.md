@@ -1,6 +1,7 @@
 ---
 title: programming with types
 date: 2015-01-23
+tags: [haskell, types]
 ---
 
 One of the things that really grows on you after programming with Haskell for a

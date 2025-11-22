@@ -1,6 +1,7 @@
 ---
 title: "exploring scala macros: map to case class conversion"
 date: 2013-11-04
+tags: [scala, macros]
 ---
 
 Recently I had a go at writing some [Scala

@@ -1,6 +1,7 @@
 ---
 title: closures vs. structs in go
 date: 2016-10-25
+tags: [go]
 ---
 
 Today, I was reminded about this classic story about [closures vs.

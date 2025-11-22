@@ -1,6 +1,7 @@
 ---
 title: dynamically creating tests with ScalaTest
 date: 2013-05-12
+tags: [scala]
 ---
 
 At the Code Retreat run at [Movio](https://movio.co) this weekend we watched
