@@ -1,7 +1,7 @@
 baseURL = 'https://blog.echo.sh/'
 languageCode = 'en-nz'
 title = 'jonathan chow'
-theme = 'archie'
+theme = 'paper'
 
 # Code Highlight
 pygmentsstyle = "solarized-light"
