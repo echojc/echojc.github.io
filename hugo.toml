@@ -8,6 +8,10 @@ disableKinds = ["taxonomy", "term"]
   [markup.highlight]
     style = 'rose-pine-dawn'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [pagination]
 pagerSize = 5 # articles per page
 
