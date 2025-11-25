@@ -1,2 +1,12 @@
 /* Place custom css here. */
 @reference './app.css';
+
+.job {
+  font-size: 0.8em;
+}
+
+.callout {
+  border: 1px solid var(--tw-prose-hr);
+  border-radius: 0.375rem;
+  padding: 1em;
+}

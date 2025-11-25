@@ -2,20 +2,19 @@ baseURL = 'https://blog.echo.sh/'
 languageCode = 'en-nz'
 title = 'jonathan chow'
 theme = 'paper'
+disableKinds = ["taxonomy", "term"]
 
-# Code Highlight
-pygmentsstyle = "solarized-light"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+[markup]
+  [markup.highlight]
+    style = 'rose-pine-dawn'
 
 [pagination]
-pagerSize = 3 # articles per page
+pagerSize = 5 # articles per page
 
 [params]
-mode="light" # color-mode → light,dark,toggle or auto
-useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-mathjax = false # enable MathJax support
-katex = false # enable KaTeX support
+color = 'light'
+github = 'echojc'
+linkedin = 'echojc'
 
 # Main menu Items
 
@@ -28,8 +27,3 @@ weight = 1
 name = "cv"
 url = "/cv"
 weight = 2
-
-[[menu.main]]
-name = "github"
-url = "https://github.com/echojc"
-weight = 3

@@ -23,7 +23,7 @@ being able to fully understand how it works, but giving just enough information
 for you to figure out the game for yourself. If you ever played classic games
 like Zelda, you'll know what I mean.
 
-## but is it really text?
+## But is it really text?
 
 At first, I didn't pay too much attention to the script. A quick skim gives the
 impression that it could plausibly be text, but there's no reason not to think
@@ -36,7 +36,7 @@ a new game! I had adventuring to do!
 But soon enough, the mystery got the better of me and I decided to give it a
 shot.
 
-## starting assumptions
+## Starting assumptions
 
 Where do you start with something like this where you have no information
 whatsoever? Essentially, you make some basic assumptions, try to make educated
@@ -52,7 +52,7 @@ I assumed:
   letters.
 * Each group of symbols connected by the centre line denotes a word.
 
-## making educated guesses
+## Making educated guesses
 
 With that in mind, I skimmed through the manual looking for text next to
 pictures that would give a hint to its meaning. This text caught my eye:
@@ -113,7 +113,7 @@ That was enough for a big guess: the second and third words were probably
 
 {{< img src="images/tunic/more-glyphs.png" >}}
 
-## consonants and vowels
+## Consonants and vowels
 
 Now that I had accumulated a set of glyphs that I was relatively certain about,
 I felt that one of my initial assumptions was not quite correct. I had started
@@ -135,7 +135,7 @@ This felt reasonable and turns out to be correct. Once you discover this
 principal, the rest of the script becomes very straightforward (but a little
 time-consuming) to decipher. This is left as an exercise for the reader :)
 
-## phonemes vs. letters
+## Phonemes vs. letters
 
 A crucial concept of this script is that it uses not the regular spelling but
 the phonetic pronunciation of a word as the basis of its spelling.
@@ -151,7 +151,7 @@ have the same pronunciation are spelt the same in the game:
 
 {{< img src="images/tunic/meat-meet-mete.png" >}}
 
-## the last piece of the puzzle
+## The last piece of the puzzle
 
 The script sometimes includes a small circle under some glyphs. I don't think it
 would have taken much to figure out what it means even without any clues, but I
@@ -183,7 +183,7 @@ instead of the incorrect
 
 {{< img src="images/tunic/item-wrong.png" caption="This is the wrong spelling." >}}
 
-## do you speak north american?
+## Do you speak North American?
 
 A phonetic script for English has interesting consequences because of how many
 varieties there are. It forces you to pronounce words a particular way, which
@@ -225,7 +225,7 @@ the choice of spelling for the ["nek minnit"
 meme](https://www.youtube.com/watch?v=RLphoP6APkg)), but perhaps North American
 speakers lean closer to the STRUT vowel?
 
-## side quest complete!
+## Side quest complete!
 
 In short - I love this script! It's a unique idea, it gives a special flavour to
 the feel of the entire game and it makes a great side quest when you want a

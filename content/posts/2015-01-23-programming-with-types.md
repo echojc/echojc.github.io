@@ -22,7 +22,7 @@ Constant function.
 
 Uh... cool. So what does `const` actually do?
 
-## generics are very generic
+## Generics are very generic
 
 To learn how to read type signatures, you first have to understand that generic
 arguments are precisely that: they are generic. Haskell has no class hierarchy
@@ -96,7 +96,7 @@ The takeaway here is that Haskell is _that_ strict about its types. If you don't
 explicitly say that a generic type can do something, then the only operation you
 can perform on it is to return itself.
 
-## arguments as the sole inputs
+## Arguments as the sole inputs
 
 Next, you have to remember that Haskell is a pure language. That means that
 given the same inputs for a function, the output will always be the same, a
@@ -116,7 +116,7 @@ int foo(int a) {
 An equivalent can't be implemented in Haskell, at least not with the same type
 signature. It is simply impossible.
 
-## examples
+## Examples
 
 That brings us directly to the most straightforward example, the `id` function:
 
@@ -175,7 +175,7 @@ const x = \_ -> x
 Through the magic of currying, `const x` returns a function that ignores its
 input and always produces the predefined constant result `x`.
 
-## closing thoughts
+## Closing thoughts
 
 And so on. The epiphany for me was the realisation that, given the constraints
 of the Haskell programming language, type signatures are in fact very unique.

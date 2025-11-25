@@ -23,7 +23,7 @@ no way to automatically call some function for each field based on its type
 without using reflection. With macros, however, the code to do this can be
 generated at compile time.
 
-## the problem
+## The problem
 
 Let's reduce the problem to a very specific one: taking any
 arbitrary case class and producing converter functions to and from a
@@ -86,7 +86,7 @@ When only the case class has changed, the compiler can catch the error in the
 `fromMap` method because it's one parameter short, but the compiler can't catch
 the semantic error in the `toMap` method missing the new `height` parameter.
 
-## using macros
+## Using macros
 
 The reason for this is that explicitly defining the mapper leads to code that's
 not very [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself). It
@@ -130,7 +130,7 @@ even a [context bound](http://stackoverflow.com/a/4467012) thrown into the mix.
 Behind all the flashiness, however, it's actually fairly straightforward. Let's
 go through this one part at a time.
 
-## implicit function to trigger macro
+## Implicit function to trigger macro
 
 We start off with the implicit method that triggers the macro:
 
@@ -178,7 +178,7 @@ In this case, the mapper is implicitly inserted into the function by the
 compiler. We don't have a reference to it, but it's there, so we use the
 implicitly function to summon it from the nether world.
 
-## macro boilerplate
+## Macro boilerplate
 
 Let's move on to the macro implementation. The structure of the macro function
 looks at first sight to be some strange incantation:
@@ -208,7 +208,7 @@ in general).
 Finally, we import everything inside the universe of the Context to bring all
 the common utility functions into scope.
 
-## macro implementation
+## Macro implementation
 
 Now we get into the nuts and bolts of the macro:
 
@@ -227,10 +227,10 @@ To start things off, we first get the type of the case class we're creating a
 mapper for out of the WeakTypeTag. This tpe variable can then be used directly
 within quasiquotes.
 
-[<s>Note: it looks like WeakTypeTags should also be directly usable within
+[~Note: it looks like WeakTypeTags should also be directly usable within
 quasiquotes since [they also have a Liftable
 implementation](http://www.scala-lang.org/files/archive/api/2.11.0-M5/#scala.reflect.api.StandardLiftables)
-but I couldn't get it to work. I didn't look too closely at it though.</s>
+but I couldn't get it to work. I didn't look too closely at it though.~
 [densh has pointed out](#comment-1138314276) that you need a variable of type
 `WeakTypeTag` and not a type of one for this to work.]
 
@@ -252,7 +252,7 @@ the AST from normal code. Note the use of the `tpe` variable inside the
 quasiquotes in place of `T`. We use `???` here because we've yet to discuss the
 real implementation of the `Mappable` instance.
 
-## getting fields
+## Getting fields
 
 Our instance of `Mapper` needs to iterate over the fields of the case class it's
 used for. We don't want _all_ fields though; just the ones used in the
@@ -287,7 +287,7 @@ hence the double 's'. There's only ever one primary constructor, so in our case
 we're fine taking the `head` of that list, but methods in general can be
 overloaded to take different parameter lists which is why it's there.
 
-## writing `toMap`
+## Writing `toMap`
 
 Now that we have the fields, let's write the `toMap` method. Let's refresh
 ourselves with what this method should look like by taking a look at the manual
@@ -374,7 +374,7 @@ println(map("price")) // 15.5
 
 Cool, huh?
 
-## writing `fromMap`
+## Writing `fromMap`
 
 The `fromMap` method can be written in an analogous way. Let's take a look at
 what we need:
@@ -436,7 +436,7 @@ println(item.name) // "dinner"
 println(item.price) // 25.8
 ```
 
-## wrapping it up
+## Wrapping it up
 
 This is the complete implementation of the macro. You can also find it in the
 `complete-example` branch of my [macro template
