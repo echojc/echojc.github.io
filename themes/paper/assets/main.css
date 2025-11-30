@@ -2,10 +2,8 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
+    --font-sans: "Noto Sans", sans-serif;
+    --font-mono: "Noto Sans Mono", monospace;
     --color-orange-500: oklch(0.705 0.213 47.604);
     --color-black: #000;
     --color-white: #fff;
@@ -20,7 +18,7 @@
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
+    --text-2xl: 1.8rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-9xl: 8rem;
     --text-9xl--line-height: 1;
@@ -47,7 +45,7 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --w: calc(680px + 32px * 2);
+    --w: calc(720px + 32px * 2);
   }
 }
 @layer base {
@@ -61,7 +59,7 @@
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var( --default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" );
+    font-family: var(--default-font-family, "Noto Sans", sans-serif);
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var( --default-font-variation-settings, normal );
     -webkit-tap-highlight-color: transparent;
@@ -91,7 +89,7 @@
     font-weight: bolder;
   }
   code, kbd, samp, pre {
-    font-family: var( --default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace );
+    font-family: var( --default-mono-font-family, "Noto Sans Mono", monospace);
     font-feature-settings: var( --default-mono-font-feature-settings, normal );
     font-variation-settings: var( --default-mono-font-variation-settings, normal );
     font-size: 1em;
@@ -607,8 +605,8 @@
       margin-bottom: 0;
     }
     :where(li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
+      margin-top: 0.4em;
+      margin-bottom: 0.4em;
     }
     :where(ol > li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
       padding-inline-start: 0.375em;
@@ -747,6 +745,9 @@
   }
   .h-\[4\.5rem\] {
     height: 4.5rem;
+  }
+  .h-\[6rem\] {
+    height: 6rem;
   }
   .h-full {
     height: 100%;
@@ -995,7 +996,7 @@
     --tw-prose-body: oklch(0.371 0 0);
     --tw-prose-headings: oklch(0.205 0 0);
     --tw-prose-lead: oklch(0.439 0 0);
-    --tw-prose-links: oklch(0.205 0 0);
+    --tw-prose-links: oklch(0.5 0.2 260);
     --tw-prose-bold: oklch(0.205 0 0);
     --tw-prose-counters: oklch(0.556 0 0);
     --tw-prose-bullets: oklch(0.87 0 0);
@@ -1044,6 +1045,7 @@
   }
   .\[background\:var\(--url\)_center_center\/cover_no-repeat\] {
     background: var(--url) center center/cover no-repeat;
+    filter: invert(100%);
   }
   .\[transition\:_background-position_0\.4s_steps\(5\)\] {
     transition:  background-position 0.4s steps(5);
@@ -1426,15 +1428,15 @@ pre {
 article {
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
-  --tw-leading: 1.8;
-  line-height: 1.8;
+  --tw-leading: 1.7;
+  line-height: 1.7;
   color: var(--color-black);
   &:where(.dark, .dark *) {
     color: var(--color-white);
   }
   code {
     display: inline-block;
-    font-size: var(--text-sm) !important;
+    /*font-size: var(--text-sm) !important;*/
     line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
     --tw-leading: calc(var(--spacing) * 6) !important;
     line-height: calc(var(--spacing) * 6) !important;

@@ -1,6 +1,10 @@
-<p align="center">
+<p class="x-img" align="center">
 {{ $image := resources.Get (.Get "src") }}
-<img src="{{ $image.Permalink }}"/>
+{{- if ne (.Get "width") "" -}}
+<img src="{{ $image.Permalink }}" style="width:{{ .Get "width" }}" />
+{{- else -}}
+<img src="{{ $image.Permalink }}" />
+{{- end -}}
 {{ if (.Get "caption") }}
 <small><em>{{ .Get "caption" }}</em></small>
 {{ end }}

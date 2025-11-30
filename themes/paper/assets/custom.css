@@ -1,6 +1,25 @@
 /* Place custom css here. */
 @reference './app.css';
 
+html {
+  font-size: 14.5px;
+}
+
+.x-img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.x-img img {
+  margin: 0;
+}
+
+.x-img small {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .job {
   font-size: 0.8em;
 }
@@ -9,4 +28,19 @@
   border: 1px solid var(--tw-prose-hr);
   border-radius: 0.375rem;
   padding: 1em;
+  display: flex;
+  gap: 1rem;
+}
+
+.callout-inner {
+  font-size: 0.9em;
+}
+
+.ptitle {
+  text-align: center;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
 }
