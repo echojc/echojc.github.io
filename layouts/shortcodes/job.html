@@ -1,5 +1,16 @@
 <div class="job">
-  {{ .Get "dates"}}<br />
-  {{ .Get "location" }}<br />
-  {{ .Get "tech" }}
+  <div class="tech">
+    {{ range $group := strings.Split (.Get "tech") "," }}
+    <div>{{ $group }}</div>
+    {{ end }}
+  </div>
+  <h3>{{ .Get "company" }} | {{ .Get "position" }}</h3>
+  <div class="meta">
+    {{ .Get "dates"}}<br />
+    {{ .Get "location" }}
+  </div>
+  <div class="details">
+    {{ .Inner | markdownify }}
+  </div>
+  <hr />
 </div>

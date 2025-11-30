@@ -6,7 +6,7 @@ disableKinds = ["taxonomy", "term"]
 
 [markup]
   [markup.highlight]
-    style = 'rose-pine-dawn'
+    style = 'catppuccin-latte'
 
 [caches]
   [caches.images]
@@ -23,11 +23,6 @@ linkedin = 'echojc'
 # Main menu Items
 
 [[menu.main]]
-name = "posts"
-url = "/posts"
-weight = 1
-
-[[menu.main]]
-name = "cv"
+name = "resume"
 url = "/cv"
-weight = 2
+weight = 1

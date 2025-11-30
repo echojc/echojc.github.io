@@ -5,6 +5,12 @@ html {
   font-size: 14.5px;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+
 .x-img {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -20,8 +26,29 @@ html {
   margin-bottom: 1em;
 }
 
-.job {
-  font-size: 0.8em;
+.job .tech {
+  float: right;
+  text-align: right;
+  color: #666;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+.job .meta {
+  font-size: 0.9em;
+}
+
+.job .details {
+  font-size: 0.95em;
+}
+
+.job hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.job:last-of-type hr {
+  display: none;
 }
 
 .callout {
