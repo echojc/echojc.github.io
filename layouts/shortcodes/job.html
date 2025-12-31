@@ -12,5 +12,5 @@
   <div class="details">
     {{ .Inner | markdownify }}
   </div>
-  <hr />
+  {{ if not (.Get "last") }}<hr />{{ end }}
 </div>

@@ -4,40 +4,29 @@ title = 'resume'
   notitle = true
 +++
 
-{{< ptitle text="I'm a **software engineer** based in **Perth, Australia**." >}}
+{{< ptitle text="I'm a **software engineer** based in **Perth, Australia** and **Auckland, NZ**." >}}
 
-## Work experience
+## Experience
 
 {{< job
     company="Pipe"
-    position="Senior Software Engineer"
-    location="Fully remote"
+    position="Staff Software Engineer"
+    location="Perth, Australia (fully remote role)"
     dates="Jun 2024 – current"
     tech="Go | TypeScript,React,Docker | Kubernetes,PostgreSQL" >}}
-* Architectured a DevEx-focused framework for the external API that provided
-  fully versioned access to consumers with minimal friction for maintenance.
+* Architectured a DevEx-focused internal framework for the external REST API
+  that allowed full backwards-compatible access with minimal friction for
+  maintenance.
 * Built the developers' portal to support partners to easily and transparently
   integrate with our platform.
 * Integrated with payment providers across America, Europe and Oceania to
-  enable partner integrations around the world.
-{{< /job >}}
-
-{{< job
-    company="Chinese Alliance Christian Church"
-    position="Youth Pastor"
-    location="Auckland, New Zealand"
-    dates="Jan 2019 – Apr 2024" >}}
-* Gave back to the community I grew up in by becoming a full-time leader in it.
-* Empowered the next generation to be their best through creating positive,
-  safe spaces for discovering self-identity and engaging with others.
-* Drove the development and casting of a refreshed vision for the church.
-* Led senior leadership to respond decisively to the needs of the community.
+  enable partners globally.
 {{< /job >}}
 
 {{< job
     company="Movio"
     position="Full-stack Software Engineer"
-    location="Auckland, New Zealand"
+    location="Auckland, NZ"
     dates="Mar 2017 – Mar 2018"
     tech="Go | JavaScript | Scala,React,Docker | Kubernetes,Spark | Elasticsearch" >}}
 * Built an ML recommendations algorithm matching movies to moviegoers, increasing visitation rates by over 5x.
@@ -46,40 +35,56 @@ title = 'resume'
 
 {{< job
     company="HooCan"
-    position="Tech Co-founder"
-    location="Auckland, New Zealand"
+    position="Technical Co-founder"
+    location="Auckland, NZ"
     dates="Sep 2016 – Mar 2017"
     tech="Go | TypeScript,React | PostgreSQL,Docker" >}}
 * Co-founded a startup connecting people to local service providers.
 * Built a cross-platform mobile app along with a fully-tested REST API backend.
-* Integrated with payment provider Stripe providing a fully-auditable paper trail for payments.
+* Integrated with payment provider Stripe providing an auditable paper trail for payments.
 {{< /job >}}
 
 {{< job
     company="Movio"
     position="Full-stack Software Engineer"
-    location="Auckland, New Zealand"
+    location="Auckland, NZ"
     dates="Jan 2013 – Sep 2016"
-    tech="Go | JavaScript | Scala | PHP,React | AngularJS | Akka,Docker | Kubernetes,Prometheus | Grafana,MySQL | Elasticsearch | InfiniDB | Cassandra" >}}
+    tech="Go | JavaScript | Scala | PHP,React | AngularJS,Docker | Kubernetes,Prometheus | Grafana,MySQL | Elasticsearch | InfiniDB | Cassandra"
+    last="true" >}}
 * Built a WYSIWYG email designer from scratch enabling clients to swiftly and efficiently create marketing campaigns.
+* Scaled up data processing capabilities by porting the backend to a column-oriented DB to meet the performance demands of new clients with 10x data.
+* Designed and implemented a real-time data analytics platform for box office reporting.
+* Rearchitected core email infrastructure to ensure reliability and performance of email marketing campaigns.
 * Transitioned server architecture from monolith to microservices.
-* Scaled up data processing capabilities by porting the backnd to a column-oriented DB to meet the performance demands of new clients with 10x data.
-* Designed and implemented a box-office reporting platform capable of generating real-time reports across custom segmentations.
-* Rearchitected core email infrastructure using the Actor model to ensure reliability and performance of email marketing campaigns.
 * Set up real-time monitoring and alerting tools to ensure reliability of microservices.
+{{< /job >}}
+
+## Other experience
+
+{{< job
+    company="Chinese Alliance Christian Church"
+    position="Youth Pastor"
+    location="Auckland, NZ"
+    dates="Jan 2019 – Apr 2024"
+    last="true" >}}
+* Gave back to the community I grew up in by becoming a full-time leader in it.
+* Empowered the next generation to be their best through creating positive,
+  safe spaces for discovering self-identity and engaging with others.
+* Drove the development and casting of a refreshed vision for the church.
+* Led senior leadership to respond decisively to the needs of the community.
 {{< /job >}}
 
 ## Education
 
-* **Bachelor of Applied Theology** at Carey Baptist College (2022)
-* **Master of Engineering in Software Engineering** at University of Auckland (2012)
-* **Bachelor of Engineering in Software Engineering** at University of Auckland (2011)
+* **Bachelor of Applied Theology** at Carey Baptist College, NZ (2022)
+* **Master of Engineering in Software Engineering** at University of Auckland, NZ (2012)
+* **Bachelor of Engineering in Software Engineering** at University of Auckland, NZ (2011)
 
 ## Projects
 
 * I was [a key early contributor](http://osu.ppy.sh/u/431) to [osu!](http://osu.ppy.sh/), a popular rhythm game with over 26 million players.
-* I open-sourced [a fully-tested library in Go](https://github.com/echojc/nzcpv) to validate the NZ Covid Pass used in New Zealand during the pandemic response.
-* I wrote my own [Game Boy emulator](https://github.com/echojc/goboy) and [assembler](https://github.com/echojc/gbasm) plus [a remake of Flappy Bird](https://github.com/echojc/flappybird) to go with it.
+* I open-sourced [a fully-tested library in Go](https://github.com/echojc/nzcpv) to validate the NZ Covid Pass used in New Zealand during the 2020 pandemic response.
+* I wrote my own [Game Boy emulator](https://github.com/echojc/goboy), [assembler](https://github.com/echojc/gbasm) and [a remake of Flappy Bird](https://github.com/echojc/flappybird).
 * I'm an avid solver of [Advent of Code](https://adventofcode.com/), placing [98th in 2017](https://adventofcode.com/2017/leaderboard).
 
 ## Talks
