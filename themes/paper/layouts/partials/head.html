@@ -42,6 +42,11 @@
   {{- $css := slice $main $custom | resources.Concat "main.css" | minify | fingerprint -}}
   <link rel="preload stylesheet" as="style" href="{{- $css.Permalink -}}" />
 
+  {{ range .Resources.Match "*.css" }}
+    {{- $css := . | minify | fingerprint -}}
+    <link rel="preload stylesheet" as="style" href="{{- $css.Permalink -}}" />
+  {{ end }}
+
   <!-- avatar -->
   {{- $avatar_url := $.Scratch.Get "avatar_url" -}}
   <!---->
