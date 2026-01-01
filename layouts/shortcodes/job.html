@@ -1,10 +1,12 @@
 <div class="job">
-  <div class="tech">
-    {{ range $group := strings.Split (.Get "tech") "," }}
-    <div>{{ $group }}</div>
-    {{ end }}
+  <div class="ordering">
+    <div class="tech">
+      {{ range $group := strings.Split (.Get "tech") "," }}
+      <div>{{ $group }}</div>
+      {{ end }}
+    </div>
+    <h3>{{ .Get "company" }} | {{ .Get "position" }}</h3>
   </div>
-  <h3>{{ .Get "company" }} | {{ .Get "position" }}</h3>
   <div class="meta">
     <div>{{ .Get "dates"}}</div>
     <div>{{ .Get "location" }}</div>
