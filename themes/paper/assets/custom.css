@@ -51,32 +51,34 @@ h2 {
   margin-bottom: 2em;
 }
 
-@media not print and (width < 64rem) {
-  .job h3 {
-    margin-top: 0 !important;
-  }
+@media not print {
+  @media (width < 64rem) {
+    .job h3 {
+      margin-top: 0 !important;
+    }
 
-  .job .ordering {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+    .job .ordering {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
-  .job .ordering .tech {
-    float: unset;
-    text-align: left;
-    margin-bottom: 1rem;
-  }
+    .job .ordering .tech {
+      float: unset;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
 
-  .job .ordering .tech div {
-    display: inline;
-  }
+    .job .ordering .tech div {
+      display: inline;
+    }
 
-  .job .ordering .tech div::after {
-    content: " | ";
-  }
+    .job .ordering .tech div::after {
+      content: " | ";
+    }
 
-  .job .ordering .tech div:last-of-type::after {
-    content: "";
+    .job .ordering .tech div:last-of-type::after {
+      content: "";
+    }
   }
 }
 
