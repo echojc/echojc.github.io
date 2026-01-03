@@ -53,16 +53,6 @@
     }
   }
 
-  .meta div {
-    display: inline;
-    &::after {
-      content: " | ";
-    }
-    &:last-of-type::after {
-      content: "";
-    }
-  }
-
   ul {
     margin-top: 0.2rem;
   }

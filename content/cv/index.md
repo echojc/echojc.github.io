@@ -11,8 +11,8 @@ title = 'resume'
 {{< job
     company="Pipe"
     position="Staff Software Engineer"
-    location="Perth, Australia (fully remote role)"
-    dates="Jun 2024 – current"
+    location="Fully remote"
+    dates="2024 – current"
     tech="Go | TypeScript,React,Docker | Kubernetes,PostgreSQL" >}}
 * Architectured a DevEx-focused internal framework for the external REST API
   that allowed full backwards-compatible access with minimal friction for
@@ -27,7 +27,7 @@ title = 'resume'
     company="Movio"
     position="Full-stack Software Engineer"
     location="Auckland, NZ"
-    dates="Mar 2017 – Mar 2018"
+    dates="2017 – 2018"
     tech="Go | JavaScript | Scala,React,Docker | Kubernetes,Spark | Elasticsearch" >}}
 * Built an ML recommendations algorithm matching movies to moviegoers, increasing visitation rates by over 5x.
 * Developed a localised, responsive, single-page web app to generate audience segmentations based on recommendations.
@@ -37,7 +37,7 @@ title = 'resume'
     company="HooCan"
     position="Technical Co-founder"
     location="Auckland, NZ"
-    dates="Sep 2016 – Mar 2017"
+    dates="2016 – 2017"
     tech="Go | TypeScript,React | PostgreSQL,Docker" >}}
 * Co-founded a startup connecting people to local service providers.
 * Built a cross-platform mobile app along with a fully-tested REST API backend.
@@ -48,7 +48,7 @@ title = 'resume'
     company="Movio"
     position="Full-stack Software Engineer"
     location="Auckland, NZ"
-    dates="Jan 2013 – Sep 2016"
+    dates="2013 – 2016"
     tech="Go | JavaScript | Scala | PHP,React | AngularJS,Docker | Kubernetes,Prometheus | Grafana,MySQL | Elasticsearch | InfiniDB | Cassandra"
     last="true" >}}
 * Built a WYSIWYG email designer from scratch enabling clients to swiftly and efficiently create marketing campaigns.
@@ -65,7 +65,7 @@ title = 'resume'
     company="Chinese Alliance Christian Church"
     position="Youth Pastor"
     location="Auckland, NZ"
-    dates="Jan 2019 – Apr 2024"
+    dates="2019 – 2024"
     last="true" >}}
 * Gave back to the community I grew up in by becoming a full-time leader in it.
 * Empowered the next generation to be their best through creating positive,

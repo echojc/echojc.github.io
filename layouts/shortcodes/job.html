@@ -8,8 +8,7 @@
     <h3>{{ .Get "company" }} | {{ .Get "position" }}</h3>
   </div>
   <div class="meta">
-    <div>{{ .Get "dates"}}</div>
-    <div>{{ .Get "location" }}</div>
+    <span>{{ .Get "dates"}}</span> | <span>{{ .Get "location" }}</span>
   </div>
   <div class="details">
     {{ .Inner | markdownify }}
