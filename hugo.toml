@@ -3,6 +3,7 @@ languageCode = 'en-nz'
 title = 'jonathan chow'
 theme = 'paper'
 disableKinds = ["taxonomy", "term"]
+timeZone = 'Pacific/Auckland'
 
 [markup]
   [markup.highlight]
